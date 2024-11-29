@@ -1,0 +1,19 @@
+<mvc:View controllerName="project3.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <VBox id="sample" class="sampleProject">
+     <Input
+            id="myInput"
+            placeholder="Enter some text"
+            width="100%" />
+
+        <!-- Button -->
+        <Button
+            id="sample1"
+            text="Show Alert"
+            press="onShowAlert"
+            class="sapUiSmallMarginTop" />
+    </VBox>
+    </Page>
+</mvc:View>
