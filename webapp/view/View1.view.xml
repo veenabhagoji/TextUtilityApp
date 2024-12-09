@@ -1,0 +1,62 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <Page id="page" title="Full Screen Application">
+        <Table id="idEmployeeTable" inset="false" items="{
+			path: 'EmployeeModel>/employees'
+			
+		}">
+            <!-- Header Toolbar -->
+            <headerToolbar>
+                <OverflowToolbar>
+                    <content>
+                        <Title id="idEmpInfo" text="Employee Info" />
+                         <Button id="idAdd" text="Add" press="onOpenDialog"></Button>
+                         <Button id="idDelete" text="Delete" ></Button>
+                         <Button id="idUpdate" text="Update" ></Button>
+
+                    </content>
+                </OverflowToolbar>
+            </headerToolbar>
+<columns>
+			<Column
+				width="auto">
+				<Text id="idEmp" text="EmployeeId" />
+			</Column>
+			<Column>
+				<Text id="idEmpName" text="Employee Name" />
+			</Column>
+			<Column>
+				
+				<Text id="idEmpAge" text="EmployeeAge" />
+			</Column>
+			<Column>
+				
+				<Text id="idEmpEmail" text="EmployeeEmail" />
+			</Column>
+			<Column>
+				<Text id="idEmpPhoneNo" text="EmployeePhoneNo" />
+			</Column>
+		</columns>
+          	<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					
+						
+						
+				<Text text="{EmployeeModel>EmployeeId}" />
+				<Text text="{EmployeeModel>Name}" />
+                 <Text text="{EmployeeModel>Age}" />
+                 <Text text="{EmployeeModel>EmployeeEmail}" />
+                 <Text text="{EmployeeModel>employeePhoneNo}" />              
+					
+					
+				</cells>
+			</ColumnListItem>
+		</items>  
+          
+        </Table>
+       
+    </Page>
+</mvc:View>

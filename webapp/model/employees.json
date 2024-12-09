@@ -1,0 +1,42 @@
+{
+    "employees": [
+        {
+            "EmployeeId":"100",
+            "Name":"Veena",
+            "Age":26,
+            "EmployeeEmail":"veena@gmail.com",
+            "employeePhoneNo":7895934853849
+        },
+        {
+            "EmployeeId":"101",
+            "Name":"mahesh",
+            "Age":29,
+            "EmployeeEmail":"mahesh@gmail.com",
+            "employeePhoneNo":954723581263
+        },   
+        { 
+            "EmployeeId":"103",
+            "Name":"prapul",
+            "Age":22,
+            "EmployeeEmail":"prapul@gmail.com",
+            "employeePhoneNo":798797448961
+        },  
+        { 
+            "EmployeeId":"104",
+            "Name":"ashwini",
+            "Age":29,
+            "EmployeeEmail":"ashwini@gmail.com",
+            "employeePhoneNo":7987974786528
+        },  
+        { 
+            "EmployeeId":"105",
+            "Name":"rahul",
+            "Age":26,
+            "EmployeeEmail":"rahul@gmail.com",
+            "employeePhoneNo":975987593864
+        } 
+
+
+
+    ]  
+}            

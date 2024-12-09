@@ -1,0 +1,35 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+	
+ 
+>
+<Dialog title="Employee Details" id="employeeDialog" >
+	<VBox class="sapUiSmallMargin">
+		 <f:SimpleForm id="SimpleFormDisplay"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			
+			singleContainerFullSize="false" >
+			<f:content>
+			    <Label text="EmployeeId" />
+                <Input id="inputEmpId" placeholder="Enter EmployeeId" />
+				<Label text="Name" />
+                <Input id="inputName" placeholder="Enter Name" />
+                <Label text="Age" />
+                <Input id="inputAge" type="Number" placeholder="Enter Age" />
+                <Label text="Email" />
+                <Input id="inputEmail" placeholder="Enter Email" />
+                <Label text="Phone" />
+                <Input id="inputPhone" placeholder="Enter Phone Number" />
+				
+			</f:content>
+		</f:SimpleForm> 
+	</VBox>
+ <buttons>
+            <Button text="Save" press="onSave" />
+            <Button text="Cancel" press="onCancel" />
+        </buttons>
+	   </Dialog>
+</core:FragmentDefinition>
