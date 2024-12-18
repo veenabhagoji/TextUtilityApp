@@ -3,25 +3,28 @@
     xmlns="sap.m">
     
     <Page id="page" title="Full Screen Application">
-        <Table id="idEmployeeTable" inset="false" items="{
-			path: 'EmployeeModel>/employees'
+        <Table id="idEmployeeTable" mode="SingleSelectLeft" inset="false" items="{
+			path: 'EmployeeModel>/employees' 
 			
 		}">
             <!-- Header Toolbar -->
             <headerToolbar>
                 <OverflowToolbar>
                     <content>
+					
                         <Title id="idEmpInfo" text="Employee Info" />
+						<ToolbarSpacer ></ToolbarSpacer>
                          <Button id="idAdd" text="Add" press="onOpenDialog"></Button>
-                         <Button id="idDelete" text="Delete" ></Button>
-                         <Button id="idUpdate" text="Update" ></Button>
+                         <Button id="idDelete" text="Delete" press="onDelete"></Button>
+                         <Button id="idUpdate" text="Update" press="onOpenDialog1" ></Button>
 
                     </content>
                 </OverflowToolbar>
             </headerToolbar>
 <columns>
-			<Column
-				width="auto">
+          
+                
+			<Column hAlign="Left">
 				<Text id="idEmp" text="EmployeeId" />
 			</Column>
 			<Column>
@@ -43,8 +46,7 @@
 			<ColumnListItem vAlign="Middle">
 				<cells>
 					
-						
-						
+			 
 				<Text text="{EmployeeModel>EmployeeId}" />
 				<Text text="{EmployeeModel>Name}" />
                  <Text text="{EmployeeModel>Age}" />
